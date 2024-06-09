@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Different Button Styles</h1>
+        <button class="btn primary" onclick="showAlert()">Primary Button</button>
+        <button class="btn secondary" onclick="showConsoleLog()">Secondary Button</button>
+        <button class="btn success" onclick="toggleProgressBar()">Success Button</button>
+        <button class="btn danger" onclick="showModal()">Danger Button</button>
+        <button class="btn warning" onclick="changeBackgroundColor()">Warning Button</button>
+        <button class="btn info" onclick="changeText()">Info Button</button>
+    </div>
+
+    <div id="progress-container" class="hidden">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>This is a modal!</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
