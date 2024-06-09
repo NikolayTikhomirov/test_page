@@ -27,12 +27,12 @@ function toggleProgressBar() {
 
 function showModal() {
     const modal = document.getElementById('modal');
-    modal.classList.remove('hidden');
+    modal.style.display = 'flex';
 }
 
 function closeModal() {
     const modal = document.getElementById('modal');
-    modal.classList.add('hidden');
+    modal.style.display = 'none';
 }
 
 function changeBackgroundColor() {
